@@ -39,25 +39,42 @@ Abaixo está a ordem de batalha recomendada para acompanhar o livro do Strang, o
 
 ---
 
-## 3. Estratégia de Anotações: O Método Híbrido (Papel + GitHub)
+## 3. O Fluxo de Estudo: Papel, IA e Markdown
 
-Quando o assunto é matemática de nível universitário, a forma como você anota define o quanto você vai reter. Tentar fazer tudo no computador é uma armadilha, mas depender só do papel dificulta a revisão no longo prazo. A solução ideal é combinar **Papel e Markdown no GitHub**.
+Álgebra Linear não se aprende de forma passiva. Como o objetivo final é dominar a base matemática para resolver problemas complexos, estruturar sistemas e criar lógicas espaciais (como a física e a movimentação em um RPG 2D), o seu estudo deve ser dividido entre a "sujeira" do rascunho e a "limpeza" da documentação.
 
-### O Papel: O "Trabalho Sujo" e a Memória Muscular
-Digitar matrizes, vetores e os passos de uma Eliminação de Gauss em um teclado quebra o estado de fluxo e é um processo dolorosamente lento.
-* **Para que usar:** Resolver os exercícios do livro do Strang, fazer cálculos de rascunho e, o mais importante, **desenhar**. A geometria é a alma do material do Strang; o cérebro processa a lógica matemática muito melhor quando a mão está traçando vetores e planos no papel.
-* **Mapas mentais:** Úteis apenas para revisões de altíssimo nível (ex: visualizar como um capítulo se conecta ao outro). São ruins para documentar mecânicas de cálculo passo a passo, então não gaste muito tempo com eles.
+### O que DEVE ser feito à mão (No Caderno/Papel)
+O papel é o seu ambiente de testes. É onde a memória muscular é criada. Não tente pular esta etapa.
+* **A Mecânica das Contas:** A Eliminação de Gauss, a multiplicação de matrizes passo a passo, a busca por pivôs. Fazer isso digitando é lento e tira o foco da lógica matemática.
+* **A Geometria Visual:** O professor desenhou dois vetores formando um plano? Desenhe também. Trace os eixos X, Y e Z. No papel, você visualiza a mesma lógica matemática usada para calcular a colisão de um hitbox ou a linha de visão de um inimigo na tela.
+* **Os Erros dos Exercícios:** A resolução dos exercícios de fim de capítulo do Strang deve nascer e morrer no papel. Você só passa para o computador o que já entendeu.
 
-### Markdown + GitHub: A Sua "Biblioteca Definitiva"
-Papel se perde, amassa e não tem `Ctrl+F`. Para o longo prazo do mestrado, documentar o aprendizado em um repositório é imbatível: o conhecimento fica estruturado, acessível de qualquer lugar e você continua movimentando seu perfil profissional.
-* **O poder da síntese:** Ao terminar uma seção, abra seu editor de texto e escreva apenas as definições cruciais, os teoremas principais e os *insights* que você teve. 
-* **A ponte com o código:** O livro do Strang trata as operações com matrizes quase como algoritmos. Aproveite a flexibilidade do Markdown para adicionar blocos de código junto com a teoria matemática. Você pode, por exemplo, documentar como implementar uma transformação linear em código, criando uma conexão direta entre a matemática pura e a lógica que você usaria para movimentar e renderizar personagens em um RPG 2D.
+### O que DEVE ir para o Markdown (No GitHub)
+O seu repositório não é um diário de tudo o que o professor falou. Ele é a **Documentação da sua "Engine" Matemática**.
+* **O "Algoritmo" do Conceito:** Em vez de copiar a teoria longa, escreva como um passo a passo. Ex: *Como encontrar o Autovalor de uma Matriz 2x2 (Passo 1: Subtraia $\lambda$ da diagonal...)*.
+* **Teoremas Essenciais e Fórmulas:** Registre as regras de ouro, preferencialmente usando a formatação do LaTeX no Markdown para ficar visualmente limpo.
+* **O Código (Opcional, mas Ouro):** Como você lida com desenvolvimento, traduza o conceito matemático para um bloco de código. Aprendeu sobre transposição de matrizes? Escreva um snippet rápido mostrando como isso ficaria em lógica de programação.
 
-### O Fluxo de Estudo na Prática
-1. **Estudo Ativo:** Leia o Strang com um caderno ao lado. Rabisque, visualize a geometria e resolva os problemas de fim de capítulo no papel.
-2. **O "Commit" Mental:** No fim da sessão de estudo, filtre o que realmente importa e digite no seu arquivo Markdown (ex: `01_geometria_das_equacoes_lineares.md`).
-3. **Anexos Visuais:** Fez um desenho esclarecedor no papel sobre a interseção de três planos? Tire uma foto e anexe no seu Markdown.
-4. **Push:** Suba tudo para o repositório. O material fica salvo, versionado e pronto para consultas rápidas quando você precisar revisar.
+---
+
+### O Fluxo de Execução Diário (Passo a Passo)
+
+Como integrar as aulas, o livro e a Inteligência Artificial sem cair na armadilha do estudo passivo:
+
+**1. Consumo Ativo (Aula ou Livro):**
+Assista à aula da UNIVESP ou leia o Strang com o caderno aberto. Pause o vídeo. Faça as contas junto com o professor. Desenhe os gráficos no papel de forma rascunhada para garantir que você entendeu o conceito espacial.
+
+**2. A Síntese Bruta:**
+Ao final do tópico, olhe para as suas anotações no papel. Qual foi a regra principal ensinada? Como essa conta é resolvida?
+
+**3. O Uso Estratégico da IA (Opcional, para produtividade):**
+**NÃO** jogue simplesmente a transcrição inteira da aula para a IA pedindo "faça um resumo em markdown". Isso engana o seu cérebro, fazendo você achar que aprendeu só porque gerou um arquivo bonito.
+* **A forma correta de usar a IA:** Jogue a transcrição da aula (ou as suas anotações brutas) e dê o seguinte comando para a IA: 
+> *"Acabei de estudar este tópico de Álgebra Linear. Baseado nesta transcrição, extraia APENAS as definições principais, as fórmulas estruturadas em LaTeX e o passo a passo lógico para resolver o problema. Formate tudo em Markdown para o meu repositório no GitHub."*
+
+**4. O Refinamento Final (O seu "Commit"):**
+Pegue o Markdown gerado pela IA e leia criticamente. Adicione as suas próprias palavras. Se o seu rascunho no papel tiver um desenho muito esclarecedor, tire uma foto e anexe no arquivo. Só então faça o `push` para o GitHub.
+
 
 ## 4. O Banco de Reservas e a "Zona de Perigo" (Cursos Adicionais)
 
